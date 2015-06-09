@@ -6,7 +6,9 @@ Simple Ruby (Sinatra) HTTP listener that logs POST contents to STDERR.
 
 After cloning, install the gems.
 
-`bundle install`
+```
+bundle install --path=.bundle
+```
 
 ## Running
 
