@@ -1,13 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    dotenv (1.0.2)
+    dotenv (2.0.1)
     fastenv (0.0.2)
-    foreman (0.76.0)
-      dotenv (~> 1.0.2)
+    foreman (0.78.0)
       thor (~> 0.19.1)
     rack (1.6.1)
-    rack-cors (0.2.9)
+    rack-cors (0.4.0)
     rack-protection (1.5.3)
       rack
     rake (10.4.2)
@@ -22,8 +21,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv (~> 2.0.1)
   fastenv (~> 0.0.2)
-  foreman (~> 0.76.0)
-  rack-cors (~> 0.2.9)
-  rake (~> 10.4.0)
-  sinatra (~> 1.4.5)
+  foreman (~> 0.78.0)
+  rack-cors (~> 0.4.0)
+  rake (~> 10.4.2)
+  sinatra (~> 1.4.6)
