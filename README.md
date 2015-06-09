@@ -12,7 +12,9 @@ bundle install --path=.bundle
 
 ## Running
 
-`bundle exec foreman start`
+```
+bundle exec foreman start
+```
 
 ## Interacting
 
