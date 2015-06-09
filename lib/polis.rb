@@ -46,9 +46,17 @@ class Polis < Sinatra::Base
 
   get '/' do
     status 200
-    return <<-PAGE
-    <html><head><title>Polis.rb</title></head><body><h2>polis.rb</h2><p>Up and Running!</p></body></html>
-    PAGE
+    return <<PAGE
+<html>
+<head>
+  <title>Polis.rb</title>
+</head>
+<body>
+  <h1>polis.rb</h1>
+  <p>Up and Running!</p>
+</body>
+</html>
+PAGE
   end
 
   post '/' do
