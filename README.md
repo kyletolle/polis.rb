@@ -20,7 +20,7 @@ Visit `http://localhost:9000` in a browser to see that it's running.
 
 ### POST
 
-POST some content to see it logged to the command line.
+POST to the URL to see the POST data logged to the command line.
 
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"hello":"world"}' http://localhost:9000
@@ -37,7 +37,6 @@ In the console you started the server, you'll see some output:
 ```
 
 ## Overriding Defaults
-
 
 To override the default behavior, set the following environment variables
 
@@ -58,7 +57,7 @@ To override the default behavior, set the following environment variables
 PORT=9090 STATUS_CODE=500 SECONDS_TO_SLEEP=2.5 bundle exec foreman start
 ```
 
-Note: You can use the dotenv approach of a `.env` file, or set the environment variables yourself.
+Note: Set the environment variables yourself, like above, or use [dotenv's](https://github.com/bkeepers/dotenv) `.env` file to store them.
 
 ## License
 
