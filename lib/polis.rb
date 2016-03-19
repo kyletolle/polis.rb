@@ -7,26 +7,9 @@ require 'rack/cors'
 require 'json'
 
 class Polis < Sinatra::Base
-  LISTENING_PORT   =
-    begin
-      Fastenv.port
-    rescue StandardError
-      9000
-    end
-
-  STATUS_CODE      =
-    begin
-      Fastenv.status_code
-    rescue StandardError
-      200
-    end
-
-  SECONDS_TO_SLEEP =
-    begin
-      Fastenv.seconds_to_sleep.to_f
-    rescue StandardError
-      0
-    end
+  LISTENING_PORT   = Fastenv.port { 9000 }
+  STATUS_CODE      = Fastenv.status_code { 200 }
+  SECONDS_TO_SLEEP = Fastenv.seconds_to_sleep { 0 }.to_f
 
   use Rack::Cors do
     allow do
